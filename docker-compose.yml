@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  apache-php:
+    container_name: apache-php
+    build:
+      context: .
+      dockerfile: ./deploy/php/Dockerfile.development
+    ports:
+      - "8080:80"
+      - "443:443"
+    volumes:
+      - .:/var/www
