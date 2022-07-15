@@ -8,6 +8,10 @@
 /vendor/
 ###< symfony/framework-bundle ###
 
+###> cs fixer ###
+/tools/php-cs-fixer/vendor/
+.php-cs-fixer.cache
+###< cs fixer ###
 
 ###> phpstorm ###
 .idea
