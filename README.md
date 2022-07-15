@@ -11,7 +11,8 @@ docker-compose up -d
 2. Install dependencies
 
 ```bash
-docker exec apache-php bash -c 'composer install' 
+docker exec apache-php bash -c 'composer install'
+docker exec apache-php bash -c 'composer install --working-dir=tools/php-cs-fixer'
 ```
 
 3. Access to `http://localhost:8080/`
@@ -60,3 +61,6 @@ It is crucial to define the path mapping for the vendor folder:
 ### Configure remote server (for debug sessions)
 
 ![Servers Configuration](./doc/images/server-config.png)
+
+### Configure CS Fixer
+
