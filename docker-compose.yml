@@ -5,7 +5,7 @@ services:
     container_name: apache-php
     build:
       context: .
-      dockerfile: ./deploy/php/Dockerfile.development
+      dockerfile: docker/php/Dockerfile.development
     ports:
       - "8080:80"
       - "443:443"
